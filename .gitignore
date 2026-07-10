@@ -1,0 +1,28 @@
+# Зависимости (устанавливаются командой npm install)
+node_modules/
+**/node_modules/
+
+# Переменные окружения с паролями и токенами — НЕ публиковать
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Сборка фронтенда
+dist/
+build/
+frontend/dist/
+
+# Логи
+*.log
+npm-debug.log*
+
+# Служебные файлы ОС и редактора
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Утилиты, не относящиеся к коду
+ngrok.exe
+*.exe

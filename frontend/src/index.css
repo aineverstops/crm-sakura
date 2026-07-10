@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff5f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFB7C5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8fab;
+}
+
+.ant-layout-sider {
+  box-shadow: 2px 0 12px rgba(255, 183, 197, 0.15) !important;
+}
+
+.sakura-card {
+  border-radius: 16px !important;
+  border: 1px solid #ffe4ea !important;
+  box-shadow: 0 2px 12px rgba(255, 183, 197, 0.12) !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+.sakura-card:hover {
+  box-shadow: 0 6px 24px rgba(255, 183, 197, 0.25) !important;
+  transform: translateY(-2px);
+}
+
+.kanban-col {
+  background: #fff5f7;
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.kanban-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #ffe4ea;
+  padding: 14px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 1px 6px rgba(255, 183, 197, 0.1);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.kanban-card:hover {
+  box-shadow: 0 4px 16px rgba(255, 183, 197, 0.25);
+  transform: translateY(-2px);
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
